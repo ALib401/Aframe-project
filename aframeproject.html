@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
+  <script src="rain.js"></script> 
+  <script src="snowflakes.js"></script>
+   <script src="script.js"></script> 
+
+</head>
+<body>
+  <a-scene>
+    <script
+      src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+<a-plane position="0 -50 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
+<a-entity gltf-model="#moai" position="21 -1 -9" scale="2 2 2" rotation="0 -45 0" id="moai1"></a-entity>
+<a-entity gltf-model="#moai" position="-22 -1 32" scale="2 2 2" rotation="0 155 0" id="moai2"></a-entity>
+   <a-entity environment="preset: forest; fog: 0.90;"></a-entity>
+    <a-entity gltf-model="#Tent" position="8.5 0 -15" rotation="0 -55 0" scale="0.3 0.3 0.3"></a-entity>
+    <a-entity gltf-model="#camp" position="4.0 0.5 -8" rotation="0 0 0"></a-entity>
+    <a-entity gltf-model="#clouds1" position="-50 45 -50" scale="100 100 100" animation="property: rotation; to: 0 360 0; dur: 120000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds1" position="50 45 -50" scale="100 100 100" animation="property: rotation; to: 0 -360 0; dur: 140000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds1" position="-50 45 50" scale="100 100 100" animation="property: rotation; to: 0 360 0; dur: 130000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds1" position="50 45 50" scale="100 100 100" animation="property: rotation; to: 0 -360 0; dur: 150000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds1" position="-40 45 -40" scale="100 100 100" animation="property: rotation; to: 0 360 0; dur: 160000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds1" position="40 45 -40" scale="100 100 100" animation="property: rotation; to: 0 -360 0; dur: 145000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds1" position="-40 45 40" scale="100 100 100" animation="property: rotation; to: 0 360 0; dur: 155000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds1" position="40 45 40" scale="100 100 100" animation="property: rotation; to: 0 -360 0; dur: 165000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds2" position="-60 45 -60" scale="25 25 25" animation="property: rotation; to: 0 360 0; dur: 100000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds2" position="60 45 -60" scale="25 25 25" animation="property: rotation; to: 0 -360 0; dur: 110000; easing: linear; loop: true"></a-entity>
+    <a-entity gltf-model="#clouds2" position="-60 45 60" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="60 45 60" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="-50 45 -20" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="50 45 -20" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="-20 45 50" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="20 45 50" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="-30 45 30" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="30 45 30" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds1" position="0 45 0" scale="100 100 100"></a-entity>
+    <a-entity gltf-model="#clouds2" position="5 45 5" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#clouds2" position="-5 45 -5" scale="25 25 25"></a-entity>
+    <a-entity gltf-model="#moon" position="55 34 10" scale="15 15 15" rotation="20 -90 10"></a-entity>
+    <a-entity id="jeep" gltf-model="#Jeep" position="0 1.0 0" scale="1 1 1" rotation="0 45 0" 
+              sound="src: #esound; positional: true; maxDistance: 30; refDistance: 5; rolloffFactor: 1"></a-entity>
+    <a-entity id="deer" gltf-model="#Deer" position="15 0 5" scale="0.6 0.6 0.6" rotation="0 -45 0" animation-mixer="clip: Idle; loop: repeat"></a-entity>
+
+
+    <a-entity gltf-model="#Tree2" position="10 5 20" rotation="0 0 0" scale="7.0 7.0 7.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-15 5 -25" rotation="0 0 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="30 5 -40" rotation="0 45 0" scale="8.0 8.0 8.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-35 5 15" rotation="0 90 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="45 5 10" rotation="0 135 0" scale="8.0 8.0 8.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-25 5 -35" rotation="0 180 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="20 5 50" rotation="0 45 0" scale="8.5 8.5 8.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="55 5 -20" rotation="0 90 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-40 5 -10" rotation="0 120 0" scale="8.0 8.0 8.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="25 5 -30" rotation="0 150 0" scale="7.0 7.0 7.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-50 5 20" rotation="0 180 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="15 5 35" rotation="0 225 0" scale="8.0 8.0 8.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-30 5 45" rotation="0 270 0" scale="7.0 7.0 7.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="60 5 -5" rotation="0 315 0" scale="8.5 8.5 8.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-35 5 -40" rotation="0 45 0" scale="8.0 8.0 8.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="50 5 5" rotation="0 90 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-10 5 30" rotation="0 135 0" scale="8.0 8.0 8.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="45 5 -30" rotation="0 180 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-25 5 -50" rotation="0 225 0" scale="8.0 8.0 8.0"></a-entity>
+    <a-entity gltf-model="#Tree2" position="30 5 25" rotation="0 270 0" scale="7.5 7.5 7.5"></a-entity>
+    <a-entity gltf-model="#Tree2" position="-50 5 10" rotation="0 315 0" scale="8.0 8.0 8.0"></a-entity>
+
+     <a-entity gltf-model="#rain2" position="0 0 0"></a-entity>
+    <a-asset id="moai" src="files/moai.glb"></a-asset>
+    <a-asset id="moon" src="files/majorasmoon.glb"></a-asset>
+      <a-asset id="clouds1" src="files/clouds1.glb"></a-asset>
+      <a-asset id="clouds2" src="files/clouds2.glb"></a-asset>
+     <a-asset id="Tree" src="files/Tree2.glb"></a-asset>
+     <a-asset id="Tree2" src="files/Tree.glb"></a-asset>
+     <a-asset id="Tent" src="files/Tent.glb"></a-asset>
+    <a-asset id="Clover" src="files/Clover.glb"></a-asset>
+     <a-asset id="Jeep" src="files/Jeep.glb"></a-asset>
+    <a-asset id="Deer" src="files/Deer.glb"></a-asset>
+    <a-asset id="brokencar" src="files/brokencar.glb"></a-asset>
+    <a-asset id="grass2" src="files/GrassWispy.glb"></a-asset>
+    <a-asset id="grass" src="files/tallgrass.glb"></a-asset>
+    <a-asset id="camp" src="files/Campfire.glb"></a-asset>
+    <audio id="moaisound" src="files/moaisound.mp3" preload="auto"></audio>
+    <audio id="esound" src="files/esound.mp3" preload="auto"></audio>
+    <audio id="rain" src="files/rain.mp3" preload="auto"></audio>
+    </a-assets>
+    <a-entity sound="src: #rain; autoplay: true; positional: false; loop: true"></a-entity>
+    <a-sky color="#ECECEC"></a-sky>
+    <a-camera>
+      <a-cursor color="gold"></a-cursor>
+    </a-camera>
+  </a-entity>
+  </a-scene>
+  <script>
+  let moai1 = document.querySelector('#moai1');
+  moai1.addEventListener('click', function () {
+    moai1.setAttribute('scale', {x: 5, y: 5, z: 5});
+     document.getElementById('moaisound').play();
+     console.log('moai1 clicked')
+  });
+  let moai2 = document.querySelector('#moai2');
+  moai2.addEventListener('click', function () {
+    moai2.setAttribute('scale', {x: 5, y: 5, z: 5});
+    document.getElementById('moaisound').play();
+     console.log('moai2 clicked')
+  });
+  let jeep = document.querySelector('#jeep');
+  jeep.addEventListener('click', function () {
+    this.components.sound.playSound();
+    console.log('jeep clicked')
+  });
+  let deer = document.querySelector('[gltf-model="#Deer"]');
+  deer.addEventListener('click', function () {
+    this.setAttribute('animation-mixer', {
+      clip: 'Death',
+      loop: 'once',
+      clampWhenFinished: true,
+      timeScale: 1
+    });
+    console.log('deer clicked')
+  });
+  </script>
+</body>
+</html>
